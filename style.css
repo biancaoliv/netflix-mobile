@@ -11,7 +11,7 @@ body {
 }
 img {
     display: block;
-    max-width: 100%; /*tamanho img tvs*//
+    max-width: 100%; /*tamanho img tvs*/
 }
 .container {
     max-width: 1220px;
@@ -59,7 +59,7 @@ img {
     display: grid;
     justify-items: center;
 }
-.main h1 {
+.section h1, .main h1 {
     font-size: 28px;
     max-width: 380px;
     text-align: center;
@@ -69,21 +69,29 @@ img {
     font-size: 18px;
     margin-top: 15px;
 }
-.main p {
+.section p, .main p {
     font-size: 18px;
     padding-top: 15px;
     max-width: 350px;
+    text-align: center;
 } 
 .form-cta {
-    display: grid;
-    grid-template-columns: 390px;
+    display: flex;
+    flex-direction: column;
     margin-top: 12px;
     margin-bottom: 12px;
+    width: 100%;
+    align-items: center;
+    
 }
 .form-cta input {
     padding: 15px 10px;
+    width: 100%;
 }
-.but {
+footer .form-cta input {
+    width: 85%;
+}
+.form-cta button {
     background: #e50914;
     color: white;
     font-size: 1rem;
@@ -94,7 +102,10 @@ img {
     min-height: 40px;
     outline: none;
     border: none;
+    width: 8rem;
+    margin-top: 1rem;
 }
+
 .gradient {
     background: rgba(0, 0, 0, 0.4);
     position: absolute;
@@ -104,7 +115,7 @@ img {
     bottom: 0;
     background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
     height: 510px;
-    width: 100%;
+    
 }
 .section {
     background: black;
@@ -119,9 +130,9 @@ img {
     font-size: 18px;
 }
 .grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
     align-items: center;
+    flex-direction: column;
 }
 .img-tv {
     position: relative;
@@ -222,26 +233,6 @@ h3 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-.form-cta2 {
-    display: grid;
-    grid-template-columns: 390px;
-    margin-bottom: 12px;
-}
-.form-cta2 input {
-    padding: 15px 10px;
-}
-.but2 {
-    background: #e50914;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    padding: 0.25rem 1rem;
-    text-decoration: none;
-    border-radius: 2px;
-    min-height: 40px;
-    outline: none;
-    border: none;
-}
  
 
 
@@ -318,24 +309,43 @@ img {
 }
 .form-cta {
     display: grid;
-    grid-template-columns: 490px;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    grid-template-columns: 450px 200px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .form-cta input {
     padding: 20px 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+
 }
-.but {
+
+.form-cta button {
     background: #e50914;
+    outline: none;
+    border: none;
     color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0.75rem 1rem;
-    text-decoration: none;
-    border-radius: 2px;
-    min-height: 40px;
-  
+    font-size: 30px;
+    cursor: pointer; /*add a mão do cursor*/
+    margin: 0;
+    width: auto;
+    height: 100%;
 }
+.form-cta button::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background: url('img/seta.svg');
+}
+
+
+.form-cta button:hover {
+    background: #f40612
+
+}
+  
+
 
 .gradient {
     background: rgba(0, 0, 0, 0.4);
@@ -476,46 +486,31 @@ img {
     border-top: 8px solid #222;
     background: black;
     text-align: center;
-    display: grid;
+    display: flex;
     justify-items: center;
+    flex-direction: column;
+}
+.footer .form-cta {
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.footer .form-cta button {
+    width: 14rem;
+    height: 4rem;
 }
 
 .footer p {
     margin-top: 2rem;
     color: #757575;
     font-size: 13px;
-    
-    
 }
 h3 {
     display: block;
     max-width: 850px;
     margin: 0 auto;
     font-weight: 400;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    text-align: center;
 }
-.form-cta2 {
-    display: grid;
-    grid-template-columns: 490px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-}
-}
-.form-cta2 input {
-    padding: 20px 10px;
-}
-.but2 {
-    background: #e50914;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0.75rem 1rem;
-    text-decoration: none;
-    border-radius: 2px;
-    min-height: 40px;
-  
-}
-
 }
