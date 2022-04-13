@@ -294,7 +294,7 @@ img {
 
 .main h1 {
     font-size: 48px;
-    max-width: 700px;
+    max-width: 600px;
     text-align: center;
 
 }
@@ -309,7 +309,7 @@ img {
 }
 .form-cta {
     display: grid;
-    grid-template-columns: 450px 200px;
+    grid-template-columns: 500px 200px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -418,8 +418,9 @@ img {
     width: 500px;
 }
 .device-pile .video-tv {
-    width: 380px;
-    left: 95px; 
+    width: 200px;
+    left: 60px; 
+    top: -40px;
 
 }
 
